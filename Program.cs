@@ -28,11 +28,11 @@ builder.Services.AddLogging();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 // הסרת הודעת טקסט והגדרת ברירת מחדל ל-Swagger
 app.MapGet("/", () => Results.Redirect("/swagger"));
@@ -87,5 +87,7 @@ app.MapDelete("/items/{id}", async (ToDoDbContext db, int id, ILogger<Program> l
     logger.LogInformation($"Item with ID {id} deleted successfully.");
     return Results.NoContent();
 });
+
+app.MapGet("/", () => "AuthServer API is Running!");
 
 app.Run();
