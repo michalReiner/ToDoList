@@ -18,7 +18,7 @@ public partial class ToDoDbContext : DbContext
     public virtual DbSet<User> Users { get; set; } // הוספת DbSet עבור Users
 
    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder.UseMySql("${CONNECTION_STRING}", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
+    => optionsBuilder.UseMySql("server=localhost;user=root;password=M.r214859217;database=ToDoDB", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder

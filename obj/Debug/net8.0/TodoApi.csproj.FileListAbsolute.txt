@@ -102,3 +102,4 @@ C:\Users\User\Desktop\פרקטיקוד\TodoApi\bin\Debug\net8.0\Swashbuckle.AspN
 C:\Users\User\Desktop\פרקטיקוד\TodoApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\User\Desktop\פרקטיקוד\TodoApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\User\Desktop\פרקטיקוד\TodoApi\obj\Debug\net8.0\TodoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\פרקטיקוד\TodoApi\obj\Debug\net8.0\TodoApi.sourcelink.json
