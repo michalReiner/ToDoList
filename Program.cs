@@ -28,11 +28,11 @@ builder.Services.AddLogging();
 
 var app = builder.Build();
 
-// if (app.Environment.IsDevelopment())
-// {
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
     app.UseSwaggerUI();
-// }
+}
 
 // הסרת הודעת טקסט והגדרת ברירת מחדל ל-Swagger
 app.MapGet("/", () => Results.Redirect("/swagger"));
